@@ -1,9 +1,9 @@
 package com.example.core.service.implementation;
 
-import com.example.api.operation2.ApiRequest;
-import com.example.api.operation2.ApiResponse;
-import com.example.api.operation2.CarEntity;
-import com.example.api.operation2.CarPOJO;
+import com.example.api.operationApi.ApiRequest;
+import com.example.api.operationApi.ApiResponse;
+import com.example.api.operationApi.CarApiEntity;
+import com.example.api.operationApi.CarPOJO;
 import com.example.core.service.GetCarsService;
 import com.example.core.service.exception.ApiServiceException;
 import com.example.core.service.mapper.VinDecodedToCarPOJO;
@@ -32,7 +32,7 @@ public class GetCarsServiceImpl implements GetCarsService {
             Stream.of(apiRequest)
                     .map(x -> x.getCarEntities()
                             .stream()
-                            .map(CarEntity::getVin)
+                            .map(CarApiEntity::getVin)
                             .collect(Collectors.toList())
                     )
                     .forEach(vin -> {

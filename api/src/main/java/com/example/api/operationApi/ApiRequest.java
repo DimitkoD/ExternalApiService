@@ -1,4 +1,4 @@
-package com.example.api.operation2;
+package com.example.api.operationApi;
 
 import com.example.api.base.OperationInput;
 import lombok.*;
@@ -11,5 +11,5 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ApiRequest implements OperationInput {
-    List<CarEntity> carEntities;
+    List<CarApiEntity> carEntities;
 }

@@ -1,7 +1,7 @@
 package com.example.core.service.mapper;
 
-import com.example.api.operation2.CarEntity;
-import com.example.api.operation2.CarPOJO;
+import com.example.api.operationApi.CarApiEntity;
+import com.example.api.operationApi.CarPOJO;
 import com.example.domain.externalmodel.VinDecoded;
 import org.springframework.stereotype.Service;
 
@@ -9,18 +9,18 @@ import org.springframework.stereotype.Service;
 public class VinDecodedToCarPOJOImpl implements VinDecodedToCarPOJO {
 
     @Override
-    public CarPOJO mapToCarPojo(VinDecoded vinDecoded, CarEntity carEntity) {
+    public CarPOJO mapToCarPojo(VinDecoded vinDecoded, CarApiEntity carApiEntity) {
 
         return CarPOJO
                 .builder()
                 .carBrand(vinDecoded.make.name)
                 .carModel(vinDecoded.model.name)
-                .carVin(carEntity.getVin())
-                .price(String.valueOf(carEntity.getPrice()))
+                .carVin(carApiEntity.getVin())
+                .price(String.valueOf(carApiEntity.getPrice()))
                 .engineHorsePower(String.valueOf(vinDecoded.engine.horsepower))
                 .transmission(vinDecoded.transmission.transmissionType)
                 .fuelType(vinDecoded.engine.fuelType)
-                .status(carEntity.getStatus())
+                .status(carApiEntity.getStatus())
                 .build();
     }
 }

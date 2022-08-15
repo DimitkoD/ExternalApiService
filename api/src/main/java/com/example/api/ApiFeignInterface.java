@@ -1,7 +1,7 @@
 package com.example.api;
 
-import com.example.api.operation2.ApiRequest;
-import com.example.api.operation2.ApiResponse;
+import com.example.api.operationApi.ApiRequest;
+import com.example.api.operationApi.ApiResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

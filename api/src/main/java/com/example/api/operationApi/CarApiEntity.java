@@ -1,4 +1,4 @@
-package com.example.api.operation2;
+package com.example.api.operationApi;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.ToString;
 @Setter
 @Builder
 @ToString
-public class CarEntity {
+public class CarApiEntity {
     private Long carId;
     private String vin;
     private double price;

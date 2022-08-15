@@ -1,7 +1,7 @@
 package com.example.rest.controller;
 
-import com.example.api.operation2.ApiRequest;
-import com.example.api.operation2.ApiResponse;
+import com.example.api.operationApi.ApiRequest;
+import com.example.api.operationApi.ApiResponse;
 import com.example.core.service.GetCarsService;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

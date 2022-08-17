@@ -20,7 +20,7 @@ public class VinDecodedToCarPOJOImpl implements VinDecodedToCarPOJO {
                 .engineHorsePower(String.valueOf(vinDecoded.engine.horsepower))
                 .transmission(vinDecoded.transmission.transmissionType)
                 .fuelType(vinDecoded.engine.fuelType)
-                .status(carApiEntity.getStatus())
+                .status(carApiEntity.getStatus().toString())
                 .build();
     }
 }

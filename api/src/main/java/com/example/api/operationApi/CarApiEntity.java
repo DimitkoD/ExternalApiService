@@ -13,5 +13,5 @@ public class CarApiEntity {
     private Long carId;
     private String vin;
     private double price;
-    private String status;
+    private Boolean status;
 }

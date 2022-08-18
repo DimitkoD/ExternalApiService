@@ -1,7 +1,7 @@
-package com.example.core.service.mapper;
+package com.example.domain.service.mapper;
 
-import com.example.api.operationApi.CarApiEntity;
-import com.example.api.operationApi.CarPOJO;
+import com.example.api.model.CarApiEntity;
+import com.example.api.model.CarPOJO;
 import com.example.domain.externalmodel.VinDecoded;
 import org.springframework.stereotype.Service;
 

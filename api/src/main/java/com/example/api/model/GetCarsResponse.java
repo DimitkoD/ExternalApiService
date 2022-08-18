@@ -1,4 +1,4 @@
-package com.example.api.operationApi;
+package com.example.api.model;
 
 import com.example.api.base.OperationResult;
 import lombok.*;
@@ -9,6 +9,6 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ApiResponse implements OperationResult {
+public class GetCarsResponse implements OperationResult {
     List<CarPOJO> carsAvailable;
 }

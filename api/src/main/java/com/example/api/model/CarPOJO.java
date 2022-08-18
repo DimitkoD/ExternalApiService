@@ -1,4 +1,4 @@
-package com.example.api.operationApi;
+package com.example.api.model;
 
 import lombok.Builder;
 import lombok.Getter;

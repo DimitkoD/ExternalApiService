@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 public class GetCarsServiceError implements Error {
     @Override
     public HttpStatus getCode() {
-        return HttpStatus.INTERNAL_SERVER_ERROR;
+        return HttpStatus.BAD_REQUEST;
     }
 
     @Override
